@@ -1,5 +1,5 @@
 def prime?(numbers)
-  if integer % integer == 0 && integer % 1 == 1
+  if numbers % numbers == 0 && numbers % 1 == 1
     true
     else
     false
