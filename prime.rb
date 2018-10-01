@@ -1,7 +1,10 @@
-def prime?(numbers)
-  if numbers % numbers == 0 && numbers % 1 == 1
-    true
+
+def prime?(n)
+  return false if n < 2 
+  return true if n == 3 || n == 2 
+    if (2...n-1).any?{|i| n % i == 0}
+      false
     else
-    false
-  end
+      true
+    end
 end
